@@ -1,0 +1,145 @@
+HOW2 - LocalBot training in Colab (quick guide)
+=================================================
+
+ONE-TIME PREP (on this PC)
+1. python training_notebooks/make_bundle.py
+2. Upload the folder training_notebooks/_upload/project to Drive:
+   My Drive/localbot-training/seeds/project
+   (it holds data/header_spec.json and tools/training/header_v2.py: the same band
+   rules the game uses). Redo it whenever data/header_spec.json changes.
+
+FIRST TIME ONLY: DOWNLOAD THE MODELS TO DRIVE (CPU runtime, no GPU units)
+Runtime > Change runtime type > CPU. Run cell 1, then cell 0 (cell_00_download_models.py).
+It saves the teacher (qwen3:14b, ~9 GB) and the 3 training bases (1.7B, 4B-Instruct-2507, 8B)
+in Drive models/ (~37 GB total). WAIT for "Done and flushed to Drive" before disconnecting,
+otherwise Drive may keep only tiny files. Check: models/ollama/blobs has one file of ~9 GB.
+After this, cell 2 copies the teacher from Drive instead of downloading it every session.
+
+EVERY GENERATION SESSION (GPU, L4)
+1. Runtime > Change runtime type > L4 (A100 only for the 8B adapter or speed; T4 as fallback;
+   H100 is not available on your plan).
+2. Paste and run, in order, same session:
+   cell_01_setup.py      mounts Drive, loads the header rules (also works on CPU)
+   cell_02_teacher.py    copies qwen3:14b from Drive (or pulls it, ~8 min), starts Ollama, defines ask().
+                         Check: "teacher copied from Drive" and ollama ps says 100% GPU
+   cell_02b_switch_teacher.py  (optional) switch to another model (8b / 14b / 32b) in the same session
+   cell_03_config.py     sampling, label pools, teacher prompts
+   cell_04_profiles.py   ~150 lore/job/friends profiles (skip if seeds/profiles_en.jsonl exists)
+   cell_04b_openers.py   creates seeds/openers_en.txt in Drive (the player's opening lines, written by a human)
+                         ONLY if missing. To add lines, edit that file in Drive; cell 5 reads it each run.
+                         Format: category | tags | text (the header of the file explains the tags).
+   cell_05_generate.py   conversations, one Bot turn at a time (the first player line is yours, the later ones
+                         come from the teacher). Set BATCH (new name per run, e.g. p6) and N. First run N = 20.
+                         Prints "7/20 done, 5 min, ~9 min left" per conversation.
+   cell_06_validate.py   rule checks, approved/rejected split, report, prints 5 samples
+   cell_07_make_review.py  creates a GOOGLE DOC (link printed) + .md backup: plain chats, one RATING each
+3. Open/copy the Doc link, then Runtime > Disconnect and delete runtime
+   (a running GPU burns units even idle). Rating does not need Colab.
+
+HUMAN REVIEW (no GPU)
+1. Open the Google Doc, type a number 1-5 after RATING (and a note after NOTES if something
+   is off). It saves by itself. Notes are what fix the prompts.
+2. Runtime > CPU. Run cells 1, 3, 5b (cell_05b_resume_no_gpu.py, set BATCH to the batch you
+   generated), 6, 8.
+   Cell 8 reads the Docs and the .md files: 4-5 approved, 3 stays unreviewed, 1-2 rejected.
+3. Send Claude the summary cell 8 prints.
+The code checks format only. Whether Bot sounds like Bot is for you to judge.
+Disconnect the CPU runtime when done.
+
+HAND-WRITTEN BATCH spec6 (cell 5c, CPU, no GPU and no model)
+Distress (sad only, no [crisis]; self-harm, [crisis] in every turn) and honesty_sincere, written by hand because they have one narrow correct answer.
+1. Runtime > CPU. Run cells 0, 1, 3 (latest paste; it must have profiles_en.jsonl on Drive from cell 4), then cell_05c_handwritten.py.
+   It writes drafts/spec6_en.jsonl (74 chats). The header of each chat is drawn like cell 5 does, redrawn until the bubbles fit its word limit.
+2. Cell 6 with BATCH = "spec6" (same rules as the other batches), cell 7 for the rating doc, rate it, cell 8.
+   To change a chat, edit the CHATS list in cell 5c and rerun it (it overwrites the draft file, so rerun 6 too).
+3. Add "spec6" to MERGE_BATCHES in cell 0 before cell 9.
+
+MERGE INTO A TRAINING SET (cell 9, CPU, no GPU and no model)
+1. Runtime > CPU. Run cells 0, 1, 3 (cell 3 must be the latest paste: it holds the rules), then cell_09_merge.py.
+   Cell 0 may set MERGE_BATCHES = ["p8a", "p9", ...]; without it the default list of rated batches is used.
+2. Batches are NOT regenerated. Cell 9 reads approved/<batch>_en_reviewed.jsonl (made by cell 8), keeps
+   review == "approved" (your 4-5), and RE-CHECKS each row with the current cell 3 rules. Rows that break a
+   newer rule are dropped (listed with reasons), as are phrases repeated across batches.
+3. It writes train/core_allowed_en_train.jsonl and ..._val.jsonl (system = header, then the chat; ~6% val),
+   train/core_allowed_en_dropped.jsonl and scores/merge_en_report.json.
+4. Send Claude scores/merge_en_report.json (counts, drop reasons, rows per special). Training (cell 10) reads train/.
+Run it again after any new batch is rated (cell 8) or after changing cell 3.
+
+IF COLAB DISCONNECTS
+Run cells 1, 2, 3 again (cell 4 only if profiles_en.jsonl is missing). Cell 5 is
+resumable: it skips finished ids. Everything important is already on Drive.
+Colab ends sessions at ~12 h, or after ~90 min idle.
+
+DRIVE LAYOUT (My Drive/localbot-training/)
+   seeds/      project/ bundle, profiles_en.jsonl
+   drafts/     raw teacher output (pilot_en.jsonl), unvalidated
+   approved/   validated examples (pilot_en.jsonl) + pilot_en_rejected.jsonl with reasons
+   scores/     validation reports, later the bench results
+   adapters/   trained LoRA adapters (next step)
+   tests/      scratch / smoke outputs
+
+HOW TO SEE YOUR COMPUTE UNITS
+- With a GPU connected: click the RAM/Disk indicator (top right) > "Ver recursos".
+  It should show the units left and the hourly burn rate for the current GPU.
+- Or open https://colab.research.google.com/signup while logged in.
+- Runtime > "Administrar sesiones" lists what is running. Close what you are not using.
+- On Google AI plans the unit amount may be metered differently from classic Colab Pro.
+  If you see no number, tell Claude what you see and we adapt the plan.
+
+HOW COLAB GETS THE MODELS
+- Teacher: nothing to set up. Cell 2 installs Ollama inside Colab and downloads
+  qwen3:14b from the Ollama registry (no account, no token). Stored on the Colab disk,
+  re-downloaded each new session (~8 min). Cell 2b switches to 8b / 32b.
+- Training bases (next step): Qwen3 weights from Hugging Face, public, no approval:
+  Qwen/Qwen3-1.7B, Qwen/Qwen3-4B-Instruct-2507, Qwen/Qwen3-8B.
+  A free Hugging Face token only avoids download rate limits:
+  huggingface.co > Settings > Access Tokens > create a READ token, then in Colab click
+  the key icon (Secrets), add HF_TOKEN and enable "Notebook access".
+  NEVER paste the token into a cell.
+- Your data: Drive. Cell 1 mounts it (Google permission popup the first time).
+
+WRITING THE OPENERS (seeds/openers_en.txt in Drive, made by cell 4b)
+Each conversation starts with ONE line written by a human (the player's first message). Later player
+lines are written by the teacher. One line per row:   category | tags | text
+- Categories are fixed, just pick one: general, boundary_push, honesty_sincere, distress,
+  honesty_playful, pixel_mean, nick, media, hard_block. (hard_block = never-allowed asks from your own list. The assistant refuses at once; the code forces boundary
+  severe + excitation none; always one turn. Short asks, no detail, tags "-", ~15 lines for the big batch.) (unsend conversations use general openers. media: the player
+  asks for a selfie / pic / gif / "what is Pixel doing"; 60% of media conversations use these, the rest
+  use a general line and Bot sends something on her own.)
+- Tags filter by the sampled header; a line is used only when ALL its tags fit. "-" = no filter.
+    near     distance is nearby / together / cohabiting     far   distance is remote / apart
+    day      time is morning / afternoon                    late  time is evening / night / small_hours
+    flirt    heat is flushed or above                       intimate  bond is warm or above
+  Do not combine tags that contradict (near+far, day+late): that line would never be used.
+- Lines starting with # are comments. Every row needs both "|". No need to rerun cell 4b after editing.
+How many (test of 20: the 40 defaults are enough. Big batch ~1,500: keep each line under ~8 uses):
+    general ~150 (about 40 with "-", ~20 each of day / late / near / far, ~15 flirt, ~15 intimate)
+    boundary_push ~15, distress ~10, honesty_sincere ~10, honesty_playful ~8, pixel_mean ~8, nick ~8, media ~25
+Tags on the special categories: leave them "-" almost always. A tag shrinks the pool, and when no line
+fits the header the conversation falls back to general and the rare case is lost.
+    honesty_*, distress, boundary_push, pixel_mean -> "-"
+    media -> mostly "-"; "far" for "show me where you are", "flirt" / "intimate" for the spicy asks
+    nick -> always "intimate" (that special only appears at bond close / devoted)
+    Fine exceptions: a few boundary_push with flirt, a few distress with late (keep several without).
+When unsure, use "-". A tag is only worth it if the line makes no sense in another situation.
+
+KNOWN SIMPLIFICATIONS OF THE PILOT
+- One header per conversation (the real game changes it every turn).
+- player / memory / event / nickname header keys are not sampled yet.
+- Label pools are small seed lists, not the game's catalog.
+- Pilot scope: Core (ALLOWED), English, Bot. Spanish and the RESTRICTED pack reuse the same cells
+  with LANG = "es" / RATING = "restricted" and their own pools.
+
+TRAINING (cell 10, GPU: T4 is enough for the 4B)
+Runtime > T4. Run cells 0, 1, then cell_10_train.py (needs train/core_allowed_en_*.jsonl from cell 9; the base
+comes from Drive models/hf/). ~15-25 min for ~800 chats. Cell 0 may set TIER = "light" | "medium" | "high".
+It saves adapters/core_allowed_en_medium/ (+ a .gguf LoRA for Ollama) and scores/train_en_medium_log.json.
+Send Claude the printed train/eval loss. Disconnect the GPU right after.
+
+NEXT
+- Run tests/partner_bench.gd with the GGUF LoRA in Ollama (ADAPTER line), compare with the base model.
+
+BEFORE SHIPPING
+See LICENSES_TODO.md at the repo root (licence texts and notices the export must include).
+
+Spec of everything above: docs/GUIDE.md at the repo root.

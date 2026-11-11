@@ -1,0 +1,82 @@
+{
+  "version": 2,
+  "comment": "Single source of truth for prompt v2 (see docs/GUIDE.md). Edit THIS file, then run tools/gen_header_spec.py to regenerate data/header_spec_data.gd. The Colab dataset generator reads this same file.",
+  "order": [
+    "v", "mode", "rating", "persona", "lang",
+    "lore", "job", "home", "pet", "friends", "hard_limits", "player", "nickname",
+    "distance", "dominance", "openness", "time", "busy",
+    "bond", "trust", "heat", "energy", "valence", "intensity",
+    "uncomfortable", "tolerates", "into", "memory", "event"
+  ],
+  "bands": {
+    "distance": ["remote", "apart", "nearby", "together", "cohabiting"],
+    "dominance": ["submissive", "yielding", "balanced", "assertive", "dominant"],
+    "openness": ["sealed", "guarded", "measured", "open", "candid"],
+    "bond": ["cold", "wary", "warm", "close", "devoted"],
+    "trust": ["none", "thin", "fair", "solid", "absolute"],
+    "heat": ["dormant", "mild", "engaged", "intense", "maximal"],
+    "energy": ["drained", "low", "steady", "high", "wired"],
+    "valence": ["foul", "sour", "neutral", "pleasant", "joyful"]
+  },
+  "edges": [20, 40, 60, 80],
+  "intensity": {
+    "names": ["normal", "rising", "flood"],
+    "rising_above": 8.5,
+    "flood_above": 9.5
+  },
+  "busy": {
+    "names": ["free", "occupied", "busy"],
+    "occupied_above": 3.0,
+    "busy_above": 6.0
+  },
+  "effective_heat": {
+    "cold_at_or_below": -4.0,
+    "cold_cap_band": 1,
+    "warm_at_or_above": 0.0
+  },
+  "time_bands": [
+    { "name": "small_hours", "from": 0, "to": 5 },
+    { "name": "morning", "from": 5, "to": 12 },
+    { "name": "afternoon", "from": 12, "to": 18 },
+    { "name": "evening", "from": 18, "to": 22 },
+    { "name": "night", "from": 22, "to": 24 }
+  ],
+  "caps": {
+    "friends": 5,
+    "hard_limits": 4,
+    "uncomfortable": 4,
+    "tolerates": 3,
+    "into": 4,
+    "lore_words": 30,
+    "lore_tiers": {
+      "light": { "source": "full", "words": 60 },
+      "medium": { "source": "full", "words": 160 },
+      "high": { "source": "full", "words": 160 }
+    },
+    "label_words": 6
+  },
+  "defaults": {
+    "home": { "en": "apartment", "es": "apartamento" }
+  },
+  "values": {
+    "v": ["2"],
+    "mode": ["chat"],
+    "rating": ["allowed", "restricted"],
+    "persona": ["bot"],
+    "lang": ["en", "es"]
+  },
+  "tags": {
+    "mood": ["neutral", "calm", "happy", "annoyed", "alert"],
+    "affinity": ["hate", "dislike", "bothers", "neutral", "enjoys", "likes", "loves"],
+    "excitation": ["none", "mild", "building", "strong", "peak"],
+    "boundary": ["none", "mild", "severe"],
+    "flags": ["unsend", "crisis"],
+    "with_argument": ["nick", "gif", "img", "vid"]
+  },
+  "media": {
+    "kinds": ["gif", "img", "vid"],
+    "max_chars": 24,
+    "max_words": 2,
+    "seed_roots": ["selfie", "pet", "blush", "laugh", "hug", "wink", "sleepy", "food", "plant", "outfit", "pout", "wave"]
+  }
+}

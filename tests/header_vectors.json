@@ -1,0 +1,4343 @@
+{
+ "cases": [
+  {
+   "fn": "band",
+   "args": [
+    "distance",
+    0
+   ],
+   "out": "remote"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "distance",
+    19.99
+   ],
+   "out": "remote"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "distance",
+    20
+   ],
+   "out": "apart"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "distance",
+    39.99
+   ],
+   "out": "apart"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "distance",
+    40
+   ],
+   "out": "nearby"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "distance",
+    59.99
+   ],
+   "out": "nearby"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "distance",
+    60
+   ],
+   "out": "together"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "distance",
+    79.99
+   ],
+   "out": "together"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "distance",
+    80
+   ],
+   "out": "cohabiting"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "distance",
+    100
+   ],
+   "out": "cohabiting"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "distance",
+    32.38
+   ],
+   "out": "apart"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "distance",
+    15.08
+   ],
+   "out": "remote"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "distance",
+    65.09
+   ],
+   "out": "together"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "distance",
+    7.24
+   ],
+   "out": "remote"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "distance",
+    53.59
+   ],
+   "out": "nearby"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "distance",
+    36.57
+   ],
+   "out": "apart"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "distance",
+    5.8
+   ],
+   "out": "remote"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "distance",
+    50.74
+   ],
+   "out": "nearby"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "distance",
+    3.75
+   ],
+   "out": "remote"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "distance",
+    43.36
+   ],
+   "out": "nearby"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "distance",
+    6.99
+   ],
+   "out": "remote"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "distance",
+    9.07
+   ],
+   "out": "remote"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "distance",
+    42.45
+   ],
+   "out": "nearby"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "distance",
+    82.69
+   ],
+   "out": "cohabiting"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "distance",
+    12.38
+   ],
+   "out": "remote"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "distance",
+    22.32
+   ],
+   "out": "apart"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "distance",
+    62.74
+   ],
+   "out": "together"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "distance",
+    94.77
+   ],
+   "out": "cohabiting"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "distance",
+    57.71
+   ],
+   "out": "nearby"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "distance",
+    39.67
+   ],
+   "out": "apart"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "dominance",
+    0
+   ],
+   "out": "submissive"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "dominance",
+    19.99
+   ],
+   "out": "submissive"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "dominance",
+    20
+   ],
+   "out": "yielding"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "dominance",
+    39.99
+   ],
+   "out": "yielding"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "dominance",
+    40
+   ],
+   "out": "balanced"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "dominance",
+    59.99
+   ],
+   "out": "balanced"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "dominance",
+    60
+   ],
+   "out": "assertive"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "dominance",
+    79.99
+   ],
+   "out": "assertive"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "dominance",
+    80
+   ],
+   "out": "dominant"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "dominance",
+    100
+   ],
+   "out": "dominant"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "dominance",
+    97.63
+   ],
+   "out": "dominant"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "dominance",
+    4.66
+   ],
+   "out": "submissive"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "dominance",
+    85.85
+   ],
+   "out": "dominant"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "dominance",
+    28.96
+   ],
+   "out": "yielding"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "dominance",
+    14.43
+   ],
+   "out": "submissive"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "dominance",
+    11.78
+   ],
+   "out": "submissive"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "dominance",
+    30.85
+   ],
+   "out": "yielding"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "dominance",
+    81.61
+   ],
+   "out": "dominant"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "dominance",
+    18.07
+   ],
+   "out": "submissive"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "dominance",
+    58.16
+   ],
+   "out": "balanced"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "dominance",
+    63.89
+   ],
+   "out": "assertive"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "dominance",
+    37.24
+   ],
+   "out": "yielding"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "dominance",
+    54.77
+   ],
+   "out": "balanced"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "dominance",
+    6.28
+   ],
+   "out": "submissive"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "dominance",
+    5.96
+   ],
+   "out": "submissive"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "dominance",
+    20.6
+   ],
+   "out": "yielding"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "dominance",
+    68.04
+   ],
+   "out": "assertive"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "dominance",
+    42.76
+   ],
+   "out": "balanced"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "dominance",
+    31.41
+   ],
+   "out": "yielding"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "dominance",
+    58.56
+   ],
+   "out": "balanced"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "openness",
+    0
+   ],
+   "out": "sealed"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "openness",
+    19.99
+   ],
+   "out": "sealed"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "openness",
+    20
+   ],
+   "out": "guarded"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "openness",
+    39.99
+   ],
+   "out": "guarded"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "openness",
+    40
+   ],
+   "out": "measured"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "openness",
+    59.99
+   ],
+   "out": "measured"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "openness",
+    60
+   ],
+   "out": "open"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "openness",
+    79.99
+   ],
+   "out": "open"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "openness",
+    80
+   ],
+   "out": "candid"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "openness",
+    100
+   ],
+   "out": "candid"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "openness",
+    45.32
+   ],
+   "out": "measured"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "openness",
+    29.98
+   ],
+   "out": "guarded"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "openness",
+    79.44
+   ],
+   "out": "open"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "openness",
+    69.9
+   ],
+   "out": "open"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "openness",
+    24.41
+   ],
+   "out": "guarded"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "openness",
+    57.44
+   ],
+   "out": "measured"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "openness",
+    52.52
+   ],
+   "out": "measured"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "openness",
+    87.51
+   ],
+   "out": "candid"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "openness",
+    72.94
+   ],
+   "out": "open"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "openness",
+    28.79
+   ],
+   "out": "guarded"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "openness",
+    98.02
+   ],
+   "out": "candid"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "openness",
+    11.81
+   ],
+   "out": "sealed"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "openness",
+    41.81
+   ],
+   "out": "measured"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "openness",
+    75.71
+   ],
+   "out": "open"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "openness",
+    15.2
+   ],
+   "out": "sealed"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "openness",
+    48.9
+   ],
+   "out": "measured"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "openness",
+    3.92
+   ],
+   "out": "sealed"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "openness",
+    66.82
+   ],
+   "out": "open"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "openness",
+    76.46
+   ],
+   "out": "open"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "openness",
+    57.3
+   ],
+   "out": "measured"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "bond",
+    0
+   ],
+   "out": "cold"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "bond",
+    19.99
+   ],
+   "out": "cold"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "bond",
+    20
+   ],
+   "out": "wary"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "bond",
+    39.99
+   ],
+   "out": "wary"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "bond",
+    40
+   ],
+   "out": "warm"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "bond",
+    59.99
+   ],
+   "out": "warm"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "bond",
+    60
+   ],
+   "out": "close"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "bond",
+    79.99
+   ],
+   "out": "close"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "bond",
+    80
+   ],
+   "out": "devoted"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "bond",
+    100
+   ],
+   "out": "devoted"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "bond",
+    87.55
+   ],
+   "out": "devoted"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "bond",
+    31.37
+   ],
+   "out": "wary"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "bond",
+    69.53
+   ],
+   "out": "close"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "bond",
+    59.44
+   ],
+   "out": "warm"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "bond",
+    57.99
+   ],
+   "out": "warm"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "bond",
+    45.62
+   ],
+   "out": "warm"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "bond",
+    84.0
+   ],
+   "out": "devoted"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "bond",
+    94.47
+   ],
+   "out": "devoted"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "bond",
+    47.41
+   ],
+   "out": "warm"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "bond",
+    66.42
+   ],
+   "out": "close"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "bond",
+    6.07
+   ],
+   "out": "cold"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "bond",
+    70.15
+   ],
+   "out": "close"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "bond",
+    64.71
+   ],
+   "out": "close"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "bond",
+    99.31
+   ],
+   "out": "devoted"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "bond",
+    82.19
+   ],
+   "out": "devoted"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "bond",
+    28.46
+   ],
+   "out": "wary"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "bond",
+    38.58
+   ],
+   "out": "wary"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "bond",
+    66.87
+   ],
+   "out": "close"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "bond",
+    2.26
+   ],
+   "out": "cold"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "bond",
+    46.17
+   ],
+   "out": "warm"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "trust",
+    0
+   ],
+   "out": "none"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "trust",
+    19.99
+   ],
+   "out": "none"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "trust",
+    20
+   ],
+   "out": "thin"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "trust",
+    39.99
+   ],
+   "out": "thin"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "trust",
+    40
+   ],
+   "out": "fair"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "trust",
+    59.99
+   ],
+   "out": "fair"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "trust",
+    60
+   ],
+   "out": "solid"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "trust",
+    79.99
+   ],
+   "out": "solid"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "trust",
+    80
+   ],
+   "out": "absolute"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "trust",
+    100
+   ],
+   "out": "absolute"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "trust",
+    16.8
+   ],
+   "out": "none"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "trust",
+    11.71
+   ],
+   "out": "none"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "trust",
+    5.9
+   ],
+   "out": "none"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "trust",
+    76.82
+   ],
+   "out": "solid"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "trust",
+    12.93
+   ],
+   "out": "none"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "trust",
+    24.76
+   ],
+   "out": "thin"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "trust",
+    39.09
+   ],
+   "out": "thin"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "trust",
+    87.14
+   ],
+   "out": "absolute"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "trust",
+    8.06
+   ],
+   "out": "none"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "trust",
+    44.92
+   ],
+   "out": "fair"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "trust",
+    54.94
+   ],
+   "out": "fair"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "trust",
+    88.34
+   ],
+   "out": "absolute"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "trust",
+    81.93
+   ],
+   "out": "absolute"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "trust",
+    86.4
+   ],
+   "out": "absolute"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "trust",
+    27.84
+   ],
+   "out": "thin"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "trust",
+    41.53
+   ],
+   "out": "fair"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "trust",
+    35.88
+   ],
+   "out": "thin"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "trust",
+    88.42
+   ],
+   "out": "absolute"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "trust",
+    95.77
+   ],
+   "out": "absolute"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "trust",
+    15.09
+   ],
+   "out": "none"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "heat",
+    0
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "heat",
+    19.99
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "heat",
+    20
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "heat",
+    39.99
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "heat",
+    40
+   ],
+   "out": "engaged"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "heat",
+    59.99
+   ],
+   "out": "engaged"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "heat",
+    60
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "heat",
+    79.99
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "heat",
+    80
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "heat",
+    100
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "heat",
+    17.62
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "heat",
+    23.2
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "heat",
+    23.33
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "heat",
+    48.5
+   ],
+   "out": "engaged"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "heat",
+    58.91
+   ],
+   "out": "engaged"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "heat",
+    26.27
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "heat",
+    0.41
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "heat",
+    41.89
+   ],
+   "out": "engaged"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "heat",
+    36.93
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "heat",
+    56.63
+   ],
+   "out": "engaged"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "heat",
+    95.31
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "heat",
+    69.05
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "heat",
+    51.55
+   ],
+   "out": "engaged"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "heat",
+    61.76
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "heat",
+    67.62
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "heat",
+    5.4
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "heat",
+    89.95
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "heat",
+    78.0
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "heat",
+    87.45
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "heat",
+    79.79
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "energy",
+    0
+   ],
+   "out": "drained"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "energy",
+    19.99
+   ],
+   "out": "drained"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "energy",
+    20
+   ],
+   "out": "low"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "energy",
+    39.99
+   ],
+   "out": "low"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "energy",
+    40
+   ],
+   "out": "steady"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "energy",
+    59.99
+   ],
+   "out": "steady"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "energy",
+    60
+   ],
+   "out": "high"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "energy",
+    79.99
+   ],
+   "out": "high"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "energy",
+    80
+   ],
+   "out": "wired"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "energy",
+    100
+   ],
+   "out": "wired"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "energy",
+    39.24
+   ],
+   "out": "low"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "energy",
+    39.9
+   ],
+   "out": "low"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "energy",
+    10.35
+   ],
+   "out": "drained"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "energy",
+    63.43
+   ],
+   "out": "high"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "energy",
+    6.22
+   ],
+   "out": "drained"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "energy",
+    6.73
+   ],
+   "out": "drained"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "energy",
+    20.88
+   ],
+   "out": "low"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "energy",
+    16.23
+   ],
+   "out": "drained"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "energy",
+    34.01
+   ],
+   "out": "low"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "energy",
+    5.26
+   ],
+   "out": "drained"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "energy",
+    0.02
+   ],
+   "out": "drained"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "energy",
+    15.13
+   ],
+   "out": "drained"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "energy",
+    10.15
+   ],
+   "out": "drained"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "energy",
+    36.36
+   ],
+   "out": "low"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "energy",
+    2.55
+   ],
+   "out": "drained"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "energy",
+    87.43
+   ],
+   "out": "wired"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "energy",
+    61.41
+   ],
+   "out": "high"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "energy",
+    14.86
+   ],
+   "out": "drained"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "energy",
+    25.23
+   ],
+   "out": "low"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "energy",
+    34.74
+   ],
+   "out": "low"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "valence",
+    0
+   ],
+   "out": "foul"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "valence",
+    19.99
+   ],
+   "out": "foul"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "valence",
+    20
+   ],
+   "out": "sour"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "valence",
+    39.99
+   ],
+   "out": "sour"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "valence",
+    40
+   ],
+   "out": "neutral"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "valence",
+    59.99
+   ],
+   "out": "neutral"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "valence",
+    60
+   ],
+   "out": "pleasant"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "valence",
+    79.99
+   ],
+   "out": "pleasant"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "valence",
+    80
+   ],
+   "out": "joyful"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "valence",
+    100
+   ],
+   "out": "joyful"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "valence",
+    36.42
+   ],
+   "out": "sour"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "valence",
+    12.28
+   ],
+   "out": "foul"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "valence",
+    84.89
+   ],
+   "out": "joyful"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "valence",
+    99.31
+   ],
+   "out": "joyful"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "valence",
+    46.6
+   ],
+   "out": "neutral"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "valence",
+    48.38
+   ],
+   "out": "neutral"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "valence",
+    8.59
+   ],
+   "out": "foul"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "valence",
+    10.22
+   ],
+   "out": "foul"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "valence",
+    34.26
+   ],
+   "out": "sour"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "valence",
+    26.48
+   ],
+   "out": "sour"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "valence",
+    82.89
+   ],
+   "out": "joyful"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "valence",
+    16.14
+   ],
+   "out": "foul"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "valence",
+    2.31
+   ],
+   "out": "foul"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "valence",
+    95.1
+   ],
+   "out": "joyful"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "valence",
+    52.83
+   ],
+   "out": "neutral"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "valence",
+    14.66
+   ],
+   "out": "foul"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "valence",
+    54.32
+   ],
+   "out": "neutral"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "valence",
+    2.7
+   ],
+   "out": "foul"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "valence",
+    52.81
+   ],
+   "out": "neutral"
+  },
+  {
+   "fn": "band",
+   "args": [
+    "valence",
+    97.85
+   ],
+   "out": "joyful"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    0
+   ],
+   "out": "small_hours"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    4.99
+   ],
+   "out": "small_hours"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    5
+   ],
+   "out": "morning"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    11.99
+   ],
+   "out": "morning"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    12
+   ],
+   "out": "afternoon"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    17.99
+   ],
+   "out": "afternoon"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    18
+   ],
+   "out": "evening"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    21.99
+   ],
+   "out": "evening"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    22
+   ],
+   "out": "night"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    23.99
+   ],
+   "out": "night"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    24
+   ],
+   "out": "small_hours"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    -1
+   ],
+   "out": "night"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    26.5
+   ],
+   "out": "small_hours"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    20.72
+   ],
+   "out": "evening"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    16.71
+   ],
+   "out": "afternoon"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    6.27
+   ],
+   "out": "morning"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    8.8
+   ],
+   "out": "morning"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    4.01
+   ],
+   "out": "small_hours"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    18.53
+   ],
+   "out": "evening"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    12.78
+   ],
+   "out": "afternoon"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    18.7
+   ],
+   "out": "evening"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    7.91
+   ],
+   "out": "morning"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    5.35
+   ],
+   "out": "morning"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    19.48
+   ],
+   "out": "evening"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    23.64
+   ],
+   "out": "night"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    20.46
+   ],
+   "out": "evening"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    19.35
+   ],
+   "out": "evening"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    19.64
+   ],
+   "out": "evening"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    17.76
+   ],
+   "out": "afternoon"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    5.44
+   ],
+   "out": "morning"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    12.42
+   ],
+   "out": "afternoon"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    8.53
+   ],
+   "out": "morning"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    0.7
+   ],
+   "out": "small_hours"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    0.67
+   ],
+   "out": "small_hours"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    6.71
+   ],
+   "out": "morning"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    6.22
+   ],
+   "out": "morning"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    16.62
+   ],
+   "out": "afternoon"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    22.96
+   ],
+   "out": "night"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    10.73
+   ],
+   "out": "morning"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    22.49
+   ],
+   "out": "night"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    23.71
+   ],
+   "out": "night"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    22.92
+   ],
+   "out": "night"
+  },
+  {
+   "fn": "time_band",
+   "args": [
+    8.75
+   ],
+   "out": "morning"
+  },
+  {
+   "fn": "busy_band",
+   "args": [
+    0
+   ],
+   "out": "free"
+  },
+  {
+   "fn": "busy_band",
+   "args": [
+    2.99
+   ],
+   "out": "free"
+  },
+  {
+   "fn": "busy_band",
+   "args": [
+    3
+   ],
+   "out": "free"
+  },
+  {
+   "fn": "busy_band",
+   "args": [
+    3.01
+   ],
+   "out": "occupied"
+  },
+  {
+   "fn": "busy_band",
+   "args": [
+    5
+   ],
+   "out": "occupied"
+  },
+  {
+   "fn": "busy_band",
+   "args": [
+    5.99
+   ],
+   "out": "occupied"
+  },
+  {
+   "fn": "busy_band",
+   "args": [
+    6
+   ],
+   "out": "occupied"
+  },
+  {
+   "fn": "busy_band",
+   "args": [
+    6.01
+   ],
+   "out": "busy"
+  },
+  {
+   "fn": "busy_band",
+   "args": [
+    8
+   ],
+   "out": "busy"
+  },
+  {
+   "fn": "busy_band",
+   "args": [
+    10
+   ],
+   "out": "busy"
+  },
+  {
+   "fn": "busy_band",
+   "args": [
+    2.2
+   ],
+   "out": "free"
+  },
+  {
+   "fn": "busy_band",
+   "args": [
+    2.27
+   ],
+   "out": "free"
+  },
+  {
+   "fn": "busy_band",
+   "args": [
+    1.97
+   ],
+   "out": "free"
+  },
+  {
+   "fn": "busy_band",
+   "args": [
+    2.04
+   ],
+   "out": "free"
+  },
+  {
+   "fn": "busy_band",
+   "args": [
+    6.24
+   ],
+   "out": "busy"
+  },
+  {
+   "fn": "busy_band",
+   "args": [
+    9.0
+   ],
+   "out": "busy"
+  },
+  {
+   "fn": "busy_band",
+   "args": [
+    8.4
+   ],
+   "out": "busy"
+  },
+  {
+   "fn": "busy_band",
+   "args": [
+    4.79
+   ],
+   "out": "occupied"
+  },
+  {
+   "fn": "busy_band",
+   "args": [
+    6.53
+   ],
+   "out": "busy"
+  },
+  {
+   "fn": "busy_band",
+   "args": [
+    8.0
+   ],
+   "out": "busy"
+  },
+  {
+   "fn": "busy_band",
+   "args": [
+    0.85
+   ],
+   "out": "free"
+  },
+  {
+   "fn": "busy_band",
+   "args": [
+    6.61
+   ],
+   "out": "busy"
+  },
+  {
+   "fn": "busy_band",
+   "args": [
+    9.1
+   ],
+   "out": "busy"
+  },
+  {
+   "fn": "busy_band",
+   "args": [
+    7.82
+   ],
+   "out": "busy"
+  },
+  {
+   "fn": "busy_band",
+   "args": [
+    7.5
+   ],
+   "out": "busy"
+  },
+  {
+   "fn": "busy_band",
+   "args": [
+    4.78
+   ],
+   "out": "occupied"
+  },
+  {
+   "fn": "busy_band",
+   "args": [
+    1.79
+   ],
+   "out": "free"
+  },
+  {
+   "fn": "busy_band",
+   "args": [
+    7.89
+   ],
+   "out": "busy"
+  },
+  {
+   "fn": "busy_band",
+   "args": [
+    3.33
+   ],
+   "out": "occupied"
+  },
+  {
+   "fn": "busy_band",
+   "args": [
+    8.01
+   ],
+   "out": "busy"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    0,
+    0,
+    0
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    0,
+    0,
+    9.6
+   ],
+   "out": "flood"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    0,
+    0,
+    -10
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    0,
+    -9.6,
+    0
+   ],
+   "out": "flood"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    0,
+    -9.6,
+    9.6
+   ],
+   "out": "flood"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    0,
+    -9.6,
+    -10
+   ],
+   "out": "flood"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    8.5,
+    0,
+    0
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    8.5,
+    0,
+    9.6
+   ],
+   "out": "flood"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    8.5,
+    0,
+    -10
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    8.5,
+    -9.6,
+    0
+   ],
+   "out": "flood"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    8.5,
+    -9.6,
+    9.6
+   ],
+   "out": "flood"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    8.5,
+    -9.6,
+    -10
+   ],
+   "out": "flood"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    8.51,
+    0,
+    0
+   ],
+   "out": "rising"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    8.51,
+    0,
+    9.6
+   ],
+   "out": "flood"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    8.51,
+    0,
+    -10
+   ],
+   "out": "rising"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    8.51,
+    -9.6,
+    0
+   ],
+   "out": "flood"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    8.51,
+    -9.6,
+    9.6
+   ],
+   "out": "flood"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    8.51,
+    -9.6,
+    -10
+   ],
+   "out": "flood"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    9.5,
+    0,
+    0
+   ],
+   "out": "rising"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    9.5,
+    0,
+    9.6
+   ],
+   "out": "flood"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    9.5,
+    0,
+    -10
+   ],
+   "out": "rising"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    9.5,
+    -9.6,
+    0
+   ],
+   "out": "flood"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    9.5,
+    -9.6,
+    9.6
+   ],
+   "out": "flood"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    9.5,
+    -9.6,
+    -10
+   ],
+   "out": "flood"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    9.43,
+    -2.08,
+    -1.97
+   ],
+   "out": "rising"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    8.94,
+    4.5,
+    -6.6
+   ],
+   "out": "rising"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    -7.46,
+    -6.98,
+    8.1
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    6.13,
+    -7.08,
+    6.53
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    9.61,
+    3.15,
+    -2.99
+   ],
+   "out": "flood"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    0.97,
+    -7.38,
+    -9.72
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    9.42,
+    2.99,
+    0.53
+   ],
+   "out": "rising"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    8.67,
+    -1.32,
+    7.43
+   ],
+   "out": "rising"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    6.52,
+    -5.78,
+    -4.96
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    -4.14,
+    -5.19,
+    1.73
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    -4.81,
+    -1.62,
+    -7.38
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    8.2,
+    -2.92,
+    -0.84
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    1.67,
+    8.09,
+    -1.59
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    8.35,
+    0.03,
+    0.64
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    0.47,
+    -9.63,
+    -1.2
+   ],
+   "out": "flood"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    -6.34,
+    -9.92,
+    5.98
+   ],
+   "out": "flood"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    -6.55,
+    -0.53,
+    4.5
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    1.13,
+    -3.48,
+    0.37
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    1.11,
+    5.69,
+    -7.88
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    1.21,
+    -5.03,
+    -4.46
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    5.45,
+    0.15,
+    1.23
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    5.2,
+    8.25,
+    -1.14
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    2.25,
+    0.11,
+    0.24
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    3.85,
+    -0.95,
+    0.67
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    -0.44,
+    8.83,
+    3.98
+   ],
+   "out": "rising"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    7.53,
+    8.84,
+    -4.81
+   ],
+   "out": "rising"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    1.19,
+    8.87,
+    6.8
+   ],
+   "out": "rising"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    -7.26,
+    -7.57,
+    -1.16
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    -8.55,
+    -5.19,
+    -8.54
+   ],
+   "out": "rising"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    3.39,
+    5.68,
+    7.94
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    -6.91,
+    4.32,
+    3.21
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    -7.14,
+    7.66,
+    9.35
+   ],
+   "out": "rising"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    -5.61,
+    9.05,
+    -2.03
+   ],
+   "out": "rising"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    -0.25,
+    9.8,
+    6.65
+   ],
+   "out": "flood"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    -6.77,
+    -1.37,
+    0.31
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    -3.22,
+    -6.09,
+    -3.63
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    4.44,
+    -9.61,
+    1.08
+   ],
+   "out": "flood"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    -1.19,
+    -9.64,
+    -3.37
+   ],
+   "out": "flood"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    2.48,
+    0.25,
+    -8.71
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    9.7,
+    5.77,
+    9.43
+   ],
+   "out": "flood"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    -7.9,
+    -4.69,
+    -9.21
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    5.58,
+    -4.59,
+    -7.41
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    -1.55,
+    8.23,
+    6.38
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    -4.83,
+    -7.01,
+    8.38
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    1.41,
+    4.01,
+    -8.21
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    -8.85,
+    3.76,
+    -1.49
+   ],
+   "out": "rising"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    -8.55,
+    8.77,
+    2.69
+   ],
+   "out": "rising"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    6.03,
+    -8.33,
+    7.12
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    -8.67,
+    7.26,
+    -0.92
+   ],
+   "out": "rising"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    -3.22,
+    1.06,
+    8.53
+   ],
+   "out": "rising"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    -4.64,
+    -7.42,
+    0.54
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    -5.23,
+    -7.81,
+    -6.77
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    -8.99,
+    -5.96,
+    -3.76
+   ],
+   "out": "rising"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    -3.9,
+    5.19,
+    -4.2
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    0.0,
+    -6.44,
+    -3.06
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    -9.64,
+    -4.99,
+    -9.69
+   ],
+   "out": "flood"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    4.66,
+    1.02,
+    -6.21
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    -0.5,
+    8.69,
+    -7.87
+   ],
+   "out": "rising"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    6.38,
+    -1.36,
+    -0.1
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "intensity",
+   "args": [
+    6.69,
+    -2.14,
+    0.13
+   ],
+   "out": "normal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    0,
+    -10
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    0,
+    -4.01
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    0,
+    -4
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    0,
+    -3.99
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    0,
+    -1
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    0,
+    -0.01
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    0,
+    0
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    0,
+    0.25
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    0,
+    2
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    0,
+    5
+   ],
+   "out": "engaged"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    0,
+    8
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    0,
+    10
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    15,
+    -10
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    15,
+    -4.01
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    15,
+    -4
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    15,
+    -3.99
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    15,
+    -1
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    15,
+    -0.01
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    15,
+    0
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    15,
+    0.25
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    15,
+    2
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    15,
+    5
+   ],
+   "out": "engaged"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    15,
+    8
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    15,
+    10
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    30,
+    -10
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    30,
+    -4.01
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    30,
+    -4
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    30,
+    -3.99
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    30,
+    -1
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    30,
+    -0.01
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    30,
+    0
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    30,
+    0.25
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    30,
+    2
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    30,
+    5
+   ],
+   "out": "engaged"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    30,
+    8
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    30,
+    10
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    50,
+    -10
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    50,
+    -4.01
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    50,
+    -4
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    50,
+    -3.99
+   ],
+   "out": "engaged"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    50,
+    -1
+   ],
+   "out": "engaged"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    50,
+    -0.01
+   ],
+   "out": "engaged"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    50,
+    0
+   ],
+   "out": "engaged"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    50,
+    0.25
+   ],
+   "out": "engaged"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    50,
+    2
+   ],
+   "out": "engaged"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    50,
+    5
+   ],
+   "out": "engaged"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    50,
+    8
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    50,
+    10
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    70,
+    -10
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    70,
+    -4.01
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    70,
+    -4
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    70,
+    -3.99
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    70,
+    -1
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    70,
+    -0.01
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    70,
+    0
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    70,
+    0.25
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    70,
+    2
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    70,
+    5
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    70,
+    8
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    70,
+    10
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    95,
+    -10
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    95,
+    -4.01
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    95,
+    -4
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    95,
+    -3.99
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    95,
+    -1
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    95,
+    -0.01
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    95,
+    0
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    95,
+    0.25
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    95,
+    2
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    95,
+    5
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    95,
+    8
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    95,
+    10
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    100,
+    -10
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    100,
+    -4.01
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    100,
+    -4
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    100,
+    -3.99
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    100,
+    -1
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    100,
+    -0.01
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    100,
+    0
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    100,
+    0.25
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    100,
+    2
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    100,
+    5
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    100,
+    8
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    100,
+    10
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    68.77,
+    9.65
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    34.27,
+    6.65
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    70.67,
+    2.72
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    40.47,
+    -3.05
+   ],
+   "out": "engaged"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    5.44,
+    -7.4
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    7.07,
+    4.82
+   ],
+   "out": "engaged"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    25.56,
+    -6.74
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    8.45,
+    6.83
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    87.05,
+    3.41
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    28.19,
+    -5.16
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    29.31,
+    -0.81
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    15.75,
+    -1.08
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    26.32,
+    9.24
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    97.26,
+    0.94
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    24.44,
+    9.31
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    30.95,
+    -2.87
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    0.11,
+    -2.37
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    47.46,
+    0.06
+   ],
+   "out": "engaged"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    20.1,
+    0.09
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    0.5,
+    -4.72
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    8.98,
+    -2.01
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    4.17,
+    -9.55
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    30.42,
+    -5.34
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    58.56,
+    0.58
+   ],
+   "out": "engaged"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    75.05,
+    3.15
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    71.6,
+    7.58
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    38.95,
+    -3.48
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    98.47,
+    -7.01
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    72.42,
+    2.86
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    4.38,
+    6.71
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    89.19,
+    2.55
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    73.39,
+    6.24
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    13.93,
+    0.48
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    50.44,
+    6.7
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    80.47,
+    6.53
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    58.41,
+    7.86
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    68.29,
+    3.87
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    22.99,
+    -9.38
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    13.31,
+    -2.79
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    10.49,
+    6.72
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    55.85,
+    2.56
+   ],
+   "out": "engaged"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    62.62,
+    3.61
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    48.93,
+    -9.93
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    79.77,
+    4.97
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    50.3,
+    0.7
+   ],
+   "out": "engaged"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    65.93,
+    -8.68
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    73.68,
+    -4.96
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    7.44,
+    -4.69
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    72.93,
+    -5.9
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    73.98,
+    9.51
+   ],
+   "out": "maximal"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    49.39,
+    -2.35
+   ],
+   "out": "engaged"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    47.9,
+    3.67
+   ],
+   "out": "engaged"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    76.7,
+    2.34
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    64.28,
+    -8.45
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    14.74,
+    -4.92
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    74.32,
+    -3.91
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    56.78,
+    -9.75
+   ],
+   "out": "mild"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    6.07,
+    -4.62
+   ],
+   "out": "dormant"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    67.2,
+    3.84
+   ],
+   "out": "intense"
+  },
+  {
+   "fn": "heat_band",
+   "args": [
+    67.57,
+    -4.18
+   ],
+   "out": "mild"
+  }
+ ]
+}
