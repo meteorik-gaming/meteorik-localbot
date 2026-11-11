@@ -1,0 +1,6 @@
+.godot/
+*.uid
+__pycache__/
+*.pyc
+*.gguf
+training_notebooks/_upload/

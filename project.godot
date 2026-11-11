@@ -1,0 +1,7 @@
+; Engine configuration file for the headless tests and for opening the library in the editor.
+config_version=5
+
+[application]
+
+config/name="meteorik-localbot"
+config/features=PackedStringArray("4.7")
